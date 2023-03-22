@@ -1,0 +1,300 @@
+.Main {
+    font: menu;
+    vertical-align: baseline;
+    font-weight: 700;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--color2);
+    .Window {
+        height: 93%;
+        width: 100%;
+        overflow-y: hidden;
+        overflow-y: hidden;
+    }
+    .Up {
+        height: 7vh;
+        width: 100%;
+        background-color: var(--color1);
+        border-bottom: 0.2vh solid var(--color6);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1vh;
+        .Opis {
+            white-space: pre;
+            padding: 1vh;
+            height: max-content;
+            width: min-content;
+            min-width: 21vh;
+            text-align: center;
+            background-color: var(--color3);
+            border: 0.1vh solid var(--color6);
+            border-radius: 4vh;
+            position: absolute;
+            right: 0;
+            top: 8vh;
+            color: var(--color6);
+            font-size: 2.3vh;
+            z-index: 8;
+        }
+        .Slk {
+            height: 100%;
+            padding-top: 1vh;
+            display: flex;
+            .U {
+                color: var(--color6);
+                font-size: 2.3vh;
+                line-height: 1;
+                padding-right: 1vh;
+                white-space: pre;
+                text-align: end;
+            }
+            .Icon1 {
+                height: 5vh;
+                width:8vh;
+            }
+            .Icon2 {
+                height: 5vh;
+                width: 5.5vh;
+            }
+            .Icon3 {
+                height: 5vh;
+                width: 8vh;
+            }
+        }
+        .MainChose {
+            font-size: 3vh;
+            color: var(--color6);
+            height: 100%;
+            .TypesList{
+                position: absolute;
+                z-index: 4;
+                max-height: 20vh;
+                background-color: var(--color1);
+                width: 37vh;
+                overflow-y: hidden;
+                overflow-x: hidden;
+                border-radius: 0 0 2vh 2vh;
+                padding-bottom: 0.5vh;
+                .Type {
+                    margin: 0.5vh 0.5vh 0.5vh 0.5vh;
+                    padding: 0.5vh 0.5vh 0.5vh 0.5vh;
+                    border-radius: 1vh 1vh 1vh 1vh;
+                    white-space: nowrap;
+                    overflow-x: hidden;
+                    background-color: var(--color3);
+                }
+                .Type:hover {
+                    background-color: var(--color4);
+                    cursor: pointer;
+                }
+            }
+            .Block {
+                height: 100%;
+                display: flex;
+                align-items: center;
+                .Chose {
+                    width: 32vh;
+                    height: 80%;
+                    overflow-x: hidden;
+                    overflow-y: hidden;
+                    background-color:var(--color3);
+                    border-radius: 40vh 12vh 56vh 20vh;
+                    border: 0.1vh solid var(--color6);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .ChoseIn {
+                        overflow-x: hidden;
+                        overflow-y: hidden;
+                        white-space: nowrap;
+                        display: flex;
+                        align-items: center;
+                        height: 100%;
+                        width: 29vh;
+                    }
+                }
+                .Change {
+                    height: 80%;
+                    width: 10vh;
+                    background-color: var(--color3);
+                    margin-right: -5vh;
+                    border: 0.1vh solid var(--color6);
+                    border-radius: 10vh 0vh 0vh 5vh;
+                    padding-left: 0.7vh;
+                    display: flex;
+                    align-items: center;
+                    .IMG {
+                        height: 80%;
+                        width: 42%;
+                    }
+                }
+                .Change:hover {
+                    background-color: var(--color4);
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    --color1: #E1CDC6;
+    --color2: #F1E9E6;
+    --color3: #F8E3CF;
+    --color4: #F2B892;
+    --color5: #F19A71;
+    --color6: #AA796C;
+    @media print {
+        .Up {
+            display: none;
+        }
+        .Window {
+            height: auto;
+        }
+    }
+}
+.App {
+  text-align: center;
+}
+
+.AppLogo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .AppLogo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.AppHeader {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.AppLink {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@font-face {
+    font-family: "BookerlyBold";
+    src: local("BookerlyBold"),url("./fonts/Bookerly\ Bold.ttf") format("truetype");
+    font-weight: bold;
+}
+@font-face {
+    font-family: "BookerlyBoldItalic";
+    src: local("BookerlyBoldItalic"),url("./fonts/Bookerly\ Bold\ Italic.ttf") format("truetype");
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: "BookerlyDisplayBoldItalic";
+    src: local("BookerlyDisplayBoldItalic"),url("./fonts/Bookerly\ Display\ Bold\ Italic.ttf") format("truetype");
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: "BookerlyDisplayBold";
+    src: local("BookerlyDisplayBold"),url("./fonts/Bookerly\ Display\ Bold.ttf") format("truetype");
+    font-weight: bold;
+}
+@font-face {
+    font-family: "BookerlyDisplayItalic";
+    src: local("BookerlyDisplayItalic"),url("./fonts/Bookerly\ Display\ Italic.ttf") format("truetype");
+    font-style: italic;
+}
+@font-face {
+    font-family: "BookerlyDisplay";
+    src: local("BookerlyDisplay"),url("./fonts/Bookerly\ Display.ttf") format("truetype");
+}
+@font-face {
+    font-family: "BookerlyItalic";
+    src: local("BookerlyItalic"),url("./fonts/Bookerly\ Italic.ttf") format("truetype");
+    font-style: italic;
+}
+@font-face {
+    font-family: "BookerlyLCDItalic";
+    src: local("BookerlyLCDItalic"),url("./fonts/Bookerly\ LCD\ Italic.ttf") format("truetype");
+    font-style: italic;
+}
+@font-face {
+    font-family: "BookerlyLCDLightItalic";
+    src: local("BookerlyLCDLightItalic"),url("./fonts/Bookerly\ LCD \Light\ Italic.ttf") format("truetype");
+    font-style: italic;
+}
+@font-face {
+    font-family: "BookerlyLightItalic";
+    src: local("BookerlyLightItalic"),url("./fonts/Bookerly\ Light\ Italic.ttf") format("truetype");
+    font-style: italic;
+}
+@font-face {
+    font-family: "BookerlyLight";
+    src: local("BookerlyLight"),url("./fonts/Bookerly\ Light.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Bookerly";
+    src: local("Bookerly"),url("./fonts/Bookerly.ttf") format("truetype");
+}
+@font-face {
+    font-family: "EtnaFreeFont";
+    src: local("EtnaFreeFont"),url("./fonts/etna-free-font.otf") format("opentype");
+}
+@font-face {
+    font-family: "GogonoCocoaMochiCyrillic";
+    src: local("GogonoCocoaMochiCyrillic"),url("./fonts/gogono-cocoa-mochi-cyrillic.otf") format("opentype");
+}
+@font-face {
+    font-family: "GULAGPavljenko";
+    src: local("GULAGPavljenko"),url("./fonts/GULAG\ Pavljenko.otf") format("opentype");
+}
+@font-face {
+    font-family: "HellasDustCyrillic";
+    src: local("HellasDustCyrillic"),url("./fonts/HellasDustCyrillic.otf") format("opentype");
+}
+@font-face {
+    font-family: "MorningBreezeBold";
+    src: local("MorningBreezeBold"),url("./fonts/MorningBreeze-Bold.otf") format("opentype");
+    font-weight: bold;
+}
+@font-face {
+    font-family: "MorningBreezeItalic";
+    src: local("MorningBreezeItalic"),url("./fonts/MorningBreeze-Italic.otf") format("opentype");
+    font-style: italic;
+}
+@font-face {
+    font-family: "MorningBreezeLight";
+    src: local("MorningBreezeLight"),url("./fonts/MorningBreeze-Light.otf") format("opentype");
+}
+@font-face {
+    font-family: "MorningBreeze";
+    src: local("MorningBreeze"),url("./fonts/MorningBreeze.otf") format("opentype");
+}
+@font-face {
+    font-family: "OldSoviet";
+    src: local("OldSoviet"),url("./fonts/Old-Soviet.otf") format("opentype");
+}
+@font-face {
+    font-family: "SquareMeal";
+    src: local("SquareMeal"),url("./fonts/Square_Meal_RUS_by_Slavchansky.ttf") format("truetype");
+}
+@font-face {
+    font-family: "ZarubkaTypeRegular";
+    src: local("ZarubkaTypeRegular"),url("./fonts/zarubkaType-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "ZaychikRegular";
+    src: local("ZaychikRegular"),url("./fonts/Zaychik-Regular.ttf") format("truetype");
+}
