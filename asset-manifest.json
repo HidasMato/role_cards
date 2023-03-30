@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/role_cards/static/css/main.ad6c0f61.css",
-    "main.js": "/role_cards/static/js/main.cd4d2e9f.js",
+    "main.js": "/role_cards/static/js/main.8a1c932a.js",
     "static/media/Виды карточек заклинаний.png": "/role_cards/static/media/Виды карточек заклинаний.a5ee9216375997a2687c.png",
     "static/media/Zaychik-Regular.ttf": "/role_cards/static/media/Zaychik-Regular.173a33b768ea315638ad.ttf",
     "static/media/MorningBreeze-Light.otf": "/role_cards/static/media/MorningBreeze-Light.823ad7a2f9b297e86b3b.otf",
@@ -37,10 +37,10 @@
     "static/media/Change.svg": "/role_cards/static/media/Change.d2ee68cc10dd187f05c77dcb242a8ce6.svg",
     "index.html": "/role_cards/index.html",
     "main.ad6c0f61.css.map": "/role_cards/static/css/main.ad6c0f61.css.map",
-    "main.cd4d2e9f.js.map": "/role_cards/static/js/main.cd4d2e9f.js.map"
+    "main.8a1c932a.js.map": "/role_cards/static/js/main.8a1c932a.js.map"
   },
   "entrypoints": [
     "static/css/main.ad6c0f61.css",
-    "static/js/main.cd4d2e9f.js"
+    "static/js/main.8a1c932a.js"
   ]
 }
